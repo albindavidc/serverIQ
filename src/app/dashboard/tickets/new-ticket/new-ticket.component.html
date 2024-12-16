@@ -1,17 +1,14 @@
 <form action="">
-  <p>
-    <label for="">Title</label>
+  <app-control label="Title">
     <input type="" name="title" id="title" />
-  </p>
+  </app-control>
+  <app-control label="Request">
+    <textarea name="request" id="request" rows="3"></textarea>
+  </app-control>
   <p>
-    <label
-      >Request<textarea name="request" id="request" rows="3"></textarea>
-    </label>
-  </p>
-  <p>
-    <button>
-        <span> Submit </span>
-        <span class="icon"> ⌲ </span>
-      </button>
+    <button appButton>
+      Submit
+      <span ngProjectAs="icon"> ⌲ </span>
+    </button>
   </p>
 </form>
